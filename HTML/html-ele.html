@@ -10,11 +10,14 @@
     <section>
         <h1>链接</h1>
         <a href="http://www.qq.com">腾讯网</a>
+        <!-- 腾讯网会在当前页面打开 -->
         <a href="http://www.taobao.com" target="_blank">淘宝网</a>
+        <!-- 淘宝网可以链接到一个新的标签页 -->
     </section>
     <section>
         <h1>表格</h1>
         <table border="1">
+            <!-- border：表格的边框设置，也可以通过css来设置 -->
             <thead>
                 <tr>
                     <th>表头1</th>
@@ -30,10 +33,12 @@
                 </tr>
                 <tr>
                     <td colspan="2">数据1</td>
+                    <!-- 合并单元格，占据两列 -->
                     <td>数据3</td>
                 </tr>
                 <tr>
                     <td rowspan="2">数据1</td>
+                    <!-- 合并单元格，占据两行 -->
                     <td>数据2</td>
                     <td>数据3</td>
                 </tr>
@@ -47,29 +52,42 @@
     <section>
         <h1>表单</h1>
         <form method="GET" action="http://www.qq.com">
+            <!-- 表单通过GET方式提交，提交到http://www.qq.com -->
             <p>
                 <select name="select1">
                     <option value="1">一</option>
                     <option value="2" selected>二</option>
+                    <!-- 设置默认选中值 -->
                 </select>
             </p>
             <p>
                 <input type="text" name="text1" />
+                <!-- 文本类型的输入 -->
             </p>
             <p>
                 <input type="password" name="password" />
+                <!-- 密码类型的输入 -->
             </p>
             <p>
                 <input type="radio" name="radio1" id="radio1-1" />
-                <label >选项一</label>
+                <label for="radio1-1">选项一</label>
+                <!-- label的for值应绑定为其对应input的id -->
+                <!-- 失去for值的label点击后不会关联到input框 -->
+                <!-- 注意html中id不可重复 -->
                 <input type="radio" name="radio1" id="radio1-2" />
                 <label for="radio1-2">选项二</label>
+                <!-- 当多个单选框的name属性相同的时候，表示它们是一组的，这一组的单选框只能选中一个 -->
+                <!-- 当有多组单选框的时候，它们的name不能相同 -->
             </p>
             <p>
                 <button type="button">普通按钮</button>
+                <!-- 普通按钮没有任何作用 -->
                 <button type="submit">提交按钮一</button>
+                <!-- 提交按钮必须写在form里面才能有效提交表单 -->
                 <input type="submit" value="提交按钮二"/>
+                <!-- 另外一种提交button的写法 -->
                 <button type="reset">重置按钮</button>
+                <!-- reset按钮也是必须出现在表单中，可以一键重置表单里面的值 -->
             </p>
         </form>
     </section>

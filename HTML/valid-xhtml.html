@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 在HTML4、XHTML中，DTD是必须的 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 在XHTML中，xmlns是必须的，用于标记文档的命名空间（文档中可以有哪些元素和属性） -->
+<!-- 由于XHTML本质是个XML，所以需要这么规定 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 这里charset的写法和HTML大类有所不同 -->
+<title>test</title>
+</head>
+<body>
+	<!-- 注意这里下面的写法并不规范，可以上 https://validator.w3.org/check 查验格式 -->
+    <div class="test">合法</div>
+    <DIV class="test">标签名大写</DIV>
+    <div ID="test">属性名大写</div>
+    <input type="checkbox" checked />
+    <p>标签不结束1
+    <p>标签不结束2
+    <div style=color:red>属性不带引号</div>
+</body>
+</html>

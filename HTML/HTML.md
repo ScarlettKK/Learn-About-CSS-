@@ -199,8 +199,31 @@ HTML5 基于HTML4，因为这时候XHTML已经流行过一段时间了，放宽�
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190312094738730-1654326499.png">
 
+### HTML元素分类
 
+#### 按照默认样式分
 
+1. 块级元素 block 
+
+	方块（长方形），占据一行
+
+2. 行内元素 inline
+
+	无规则形状（空间不够的时候可能会出现内部换行，一半在上面一半在下面），无自己的尺寸（width height设置无效），挤在一行的某个位置
+
+3. inline-block
+
+	对外像inline元素，可以跟其他元素挤在一行
+
+	对内像block元素，有自己的形状，尺寸
+
+	很多常见表单元素（input、select）都是inline-block元素
+
+#### 按照内容分
+
+HTML5 新的分类方法
+
+详情见[w3c HTML5文档 kinds-of-content分类图](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
 
 
 

@@ -2,6 +2,8 @@
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190304201539507-1866945106.png">
 
+`参考代码`：[html-ele.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/html-ele.html)
+
 ## Header
 
 ### meta
@@ -181,6 +183,8 @@ HTML5结构解析（大纲算法）工具：[h5o](http://h5o.github.io/)
 
 ### HTML版本
 
+`参考代码`：[valid-xhtml.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/valid-xhtml.html) [valid-html.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/valid-html.html)
+
 HTML4 语法容错性强，大小写错乱或者是没写闭合标签并不会报错，代码标准错乱
 
 XHTML 语法要求严格，所有标签必须小写，所有属性既声明必须有值（在HTML4/5中bool属性声明可以不赋值），必须有闭合（像br换行符必须写`<br/>`HTML4、5写`<br>`即可）。增强代码的可读性，但代码标准有些过于严格，增加了开发的难度
@@ -200,6 +204,8 @@ HTML5 基于HTML4，因为这时候XHTML已经流行过一段时间了，放宽�
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190312094738730-1654326499.png">
 
 ### HTML元素分类
+
+`参考代码`：[block-inline.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/block-inline.html)
 
 #### 按照默认样式分
 

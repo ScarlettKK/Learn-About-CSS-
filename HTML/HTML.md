@@ -235,6 +235,8 @@ HTML5 新的分类方法
 
 ## HTML元素嵌套关系
 
+`参考代码`：[html-ele.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/a-nest-div.html)
+
 1. 块级元素可以包含行内元素
 
 2. 块级元素不一定能包含块级元素（eg：`<p>`中不能再包含`<div>`这样的元素）

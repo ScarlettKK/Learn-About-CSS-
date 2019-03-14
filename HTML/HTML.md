@@ -235,7 +235,7 @@ HTML5 新的分类方法
 
 ## HTML元素嵌套关系
 
-`参考代码`：[html-ele.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/a-nest-div.html)
+`参考代码`：[a-nest-div.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/a-nest-div.html)
 
 1. 块级元素可以包含行内元素
 

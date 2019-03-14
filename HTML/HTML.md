@@ -233,6 +233,32 @@ HTML5 新的分类方法
 
 详情见[w3c HTML5文档 kinds-of-content分类图](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
 
+## HTML元素嵌套关系
+
+1. 块级元素可以包含行内元素
+
+2. 块级元素不一定能包含块级元素（eg：`<p>`中不能再包含`<div>`这样的元素）
+
+	在 [HTML5 规范性文档](https://www.w3.org/TR/html5/textlevel-semantics.html#the-q-element)中，p 的 content model（里面可嵌套的内容） 是 phrasing content，用于装载文本，而div并不是一个phrasing content，故不合法
+
+3. 行内元素一般不能包含块级元素（eg：`<span>`中不能再包含`<div>`这样的元素）
+
+	疑问：为什么是一般？
+
+	反例：`<a>`元素中可以包含`<div>`这样的元素
+
+		为什么 a > div 是合法的？
+
+		在HTML4中，a标签只能包含行内元素，而且里面不能再包含一个a标签或者是其他交互性组件，如btn
+
+		在很多场景中，我们需要点击某一大块的广告跳到某个链接，所以 a > div 这点在 HTML5 中作了合法化
+
+		在 [HTML5 规范性文档](https://www.w3.org/TR/html5/textlevel-semantics.html#the-a-element)中，将 a 的 content model 列为 transparent，也就是在计算内容模型的时候，这个 a 元素本身是不参与计算的
+
+		也就是说，当文档中有 a 标签，页面去计算嵌套合法性的时候，会把这个a当作是不存在的，只计算了里面的div，故合法
+
+
+
 
 
 

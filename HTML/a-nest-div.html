@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>default style</title>
+</head>
+<body>
+    <div><a href="#">DIV &gt; A</a></div>
+    <!-- 块级元素可以包含行内元素 -->
+    <a href="#"><div>A &gt; DIV</div></a>
+    <!-- 行内元素一般不能包含块级元素 -->
+    <p><a href="#"><div>P &gt; A &gt; DIV</div></a></p>
+    <!-- 块级元素不一定能包含块级元素 -->
+    <!-- 这里会被解析成 div 包含 a，但 p 被扔到了外面（浏览器容错模式） -->
+</body>
+</html>

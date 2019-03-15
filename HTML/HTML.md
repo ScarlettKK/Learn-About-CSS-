@@ -261,6 +261,8 @@ HTML5 新的分类方法
 
 ## HTML元素默认样式
 
+`参考代码`：[default-style.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/default-style.html)
+
 ### 默认样式的意义
 
 HTML作为文档性标记语言，其中的元素（特别如下拉框、输入框）是需要有初始化的样式以及显示的，不然你每个元素的样式都要去定义一遍，失去了HTML语法简洁的特性
@@ -279,7 +281,7 @@ CSS Reset（样式重置）：覆盖掉不想要的默认样式，统一不同�
 
 通用[CSS样式重置代码](https://meyerweb.com/eric/tools/css/reset/index.html)可以帮助我们进行CSS样式初始化工作
 
-更多[CSS Reset代码](https://yuilibrary.com/yui/docs/cssreset/)
+更多[CSS Reset代码](https://yuilibrary.com/yui/docs/cssreset/)，以及[default-style.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/default-style.html)
 
 ### 补充
 

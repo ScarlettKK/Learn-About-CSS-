@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>default style</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        /*上面的CSS Reset写法是有所争议的，因为*代表任何元素，浏览器匹配的时候需要一个一个查找，可能会带来性能问题*/
+    </style>
+    <!-- 这里要注意，html的body元素也是有默认样式的，默认带8px的margin，所以在上面的style里面需要提前把全局margin设置为0 -->
+</head>
+<body>
+    <div>DIV元素</div>
+    <ul>
+        <li>LI元素</li>
+        <li>LI元素</li>
+    </ul>
+    <!-- ul元素自带40px的padding-left -->
+    <!-- ul元素的list-style-position默认为outside，就是在li元素外面，我们也可以通过设置其为inside把它整到li里面 -->
+</body>
+</html>

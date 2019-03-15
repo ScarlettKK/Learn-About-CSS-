@@ -257,6 +257,38 @@ HTML5 新的分类方法
 
 		也就是说，当文档中有 a 标签，页面去计算嵌套合法性的时候，会把这个a当作是不存在的，只计算了里面的div，故合法
 
+## HTML元素默认样式
+
+### 默认样式的意义
+
+HTML作为文档性标记语言，其中的元素（特别如下拉框、输入框）是需要有初始化的样式以及显示的，不然你每个元素的样式都要去定义一遍，失去了HTML语法简洁的特性
+
+### 默认样式带来的问题
+
+有一些元素的默认样式，是我们并不想要的，这里就需要覆盖
+
+甚至有的元素的样式是难以被覆盖的（如下拉框）
+
+各个浏览器的默认样式也各不相同
+
+### CSS Reset
+
+CSS Reset（样式重置）：覆盖掉不想要的默认样式，统一不同浏览器之间的样式
+
+通用[CSS样式重置代码](https://meyerweb.com/eric/tools/css/reset/index.html)可以帮助我们进行CSS样式初始化工作
+
+更多[CSS Reset代码](https://yuilibrary.com/yui/docs/cssreset/)
+
+### 补充
+
+另一种HTML默认样式处理方法（非CSS Reset）：[normalize.css](https://necolas.github.io/normalize.css/)
+
+有选择地保留一些元素的默认样式
+
+并且尝试在不同浏览器之间作一些样式修正
+
+[normalize.css 原理详解](https://jerryzou.com/posts/aboutNormalizeCss/）
+
 
 
 

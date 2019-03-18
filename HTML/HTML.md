@@ -291,16 +291,84 @@ CSS Reset（样式重置）：覆盖掉不想要的默认样式，统一不同�
 
 并且尝试在不同浏览器之间作一些样式修正
 
-[normalize.css 原理详解](https://jerryzou.com/posts/aboutNormalizeCss/）
+[normalize.css 原理详解](https://jerryzou.com/posts/aboutNormalizeCss/)
 
+## HTML面试真题
 
+1. doctype的意义是什么（`<!DOCTYPE html>`）
 
+	让浏览器以标准模式渲染（特别是IE浏览器有自己的渲染模式，最典型的就是[盒子模型](https://www.cnblogs.com/smyhvae/p/7256371.html)，当你带上doctype的时候，IE浏览器就会以标准模式渲染）
 
+	让浏览器知道元素的合法性（按照HTML4标准还是HTML5标准？）
 
+2. HTML XHTML HTML5的关系
 
+	HTML属于[SGML](https://wiki.mbalib.com/wiki/SGML#SGML.E7.9A.84.E6.9E.84.E6.88.90.07UNIQ6230c9d3692f173d-nowiki-0000000B-QINU3.07UNIQ6230c9d3692f173d-nowiki-0000000C-QINU)（SGML是很大的一个语言集合，包括XML都是它的应用，XML其实是一个精简的SGML版本）
 
+	XHTML属于XML，是HTML进行XML严格化的结果
 
+	HTML5不属于SGML或者是XML，是一个独立的语言集合，比XHTML宽松
 
+3. HTML5有什么变化
 
+	新的语义化元素
 
+	表单增强
 
+	新的API（离线 Application Cache、视频音频、图形学 canvas、实时通信 websocket、本地存储 storage、设备能力 Geolocation）
+
+	分类嵌套和变更（如a元素嵌套div元素变合法）
+
+4. em 和 i有什么区别
+
+	em 是语义化的标签，表示强调
+
+	i是纯样式的标签，表示斜体
+
+	HTML5 中 i 不推荐当作样式标签使用，一般用作图标（icon）
+
+5. 语义化的意义是什么？
+
+	开发者容易理解
+
+	机器容易理解结构（搜索、读屏软件）
+
+	有利于[SEO](https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=seo&fromid=102990&fr=aladdin)，使搜索引擎中显示的网站相关信息对用户来说更具有吸引力
+
+	semantic microdata（语义微数据），把页面内容作进一步的语义化标记，方便搜索（如搜索中的电影评分）
+
+6. 哪些元素可以自闭合？（里面不能再嵌套别的东西，只有一个标签，没有对应的闭合标签）
+
+	表单元素input
+
+	图片img
+
+	br hr
+
+	meta link
+
+7. HTML 和 DOM的关系
+
+	HTML是写死的
+
+	DOM由HTML解析而来，是活的，可以被操作的
+
+	JS可以维护DOM
+
+8. property 和 attribute 的区别
+
+	property 是活的，代表JS-DOM中的属性
+
+	attribute 是“死”的，是代表HTML中的属性
+
+9. form 的作用有哪些
+
+	方便直接提交表单
+
+	提供submit/reset按钮可以方便表单提交与清空
+
+	便于浏览器保存表单
+
+	第三方库可以整体提取表单的值（如 jquery 的 serialize() 方法）
+
+	第三方库可以进行表单验证（有些库需要有表单才能提供验证）

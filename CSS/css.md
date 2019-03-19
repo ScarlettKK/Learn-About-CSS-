@@ -6,6 +6,8 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 ## 基本规则
 
+`参考代码`：[css-basic.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/css-basic.html)
+
 选择器{
 	
 	属性: 值;（这里的分号概念上是一个分隔符号，编程中可以不加上，程序也不会报错，但是加上分号更有利于代码维护）

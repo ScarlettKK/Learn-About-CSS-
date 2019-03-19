@@ -28,6 +28,12 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 ### 选择器分类和权重
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202601678-1477624302.png">
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202608280-405581363.png">
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202627131-783053517.png">
+
 ### 选择器解析方式和性能
 
 ### 值的关注的选择器

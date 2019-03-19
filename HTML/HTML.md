@@ -356,6 +356,8 @@ CSS Reset（样式重置）：覆盖掉不想要的默认样式，统一不同�
 	JS可以维护DOM
 
 8. property 和 attribute 的区别
+	
+	`参考代码`：[property-attribute.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/HTML/property-attribute.html)
 
 	property 是活的，代表JS-DOM中的属性
 

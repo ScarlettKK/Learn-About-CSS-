@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic</title>
+    <style>
+        body{
+            padding: 10px;
+            font-size: 14px;
+            background:red; 
+        }
+        body.body{ /*比上一个选择器权重高一些*/ /*多个选择器可以叠加*/
+            font-size: 20px;
+            background: red;
+        }
+        #body{/*比上一个选择器权重又要高一些*/
+            background: blue; /*最后页面的背景是蓝色的*/
+        }
+        /*层叠样式表的演示*/
+        /*注意上面三个CSS class的效果是一层一层叠加上去的*/
+
+        /*这里注意浏览器解析选择器的方式是从右往左的！也就是下面的 a 会先被寻找，然后再去验证其祖先是不是div，再以此类推*/
+        /*这样的解析顺序是从性能考虑的，防止从左往右查找范围过大（假设.body中有好几百个div，那么还要一个一个去div里面找）*/
+        /*从右往左的话，一般只需要定位那么几个小元素，然后找其父级进行验证即可，这样的方式更为高效*/
+        .body div a{
+
+        }
+    </style>
+</head>
+<body class="body" id="body">
+    Hello CSS!
+</body>
+</html>

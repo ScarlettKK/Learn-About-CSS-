@@ -38,6 +38,8 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202627131-783053517.png">
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190320092936376-1490326394.png">
+
 ### 选择器解析方式和性能
 
 ### 值的关注的选择器

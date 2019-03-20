@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic</title>
+    <style>
+        #test1{
+            color:red;
+        }
+        /*权重：100*/
+        #test1.test1{
+            color:blue;
+        }
+        /*权重：100+10=110*/
+        /*最后test1显示蓝色*/
+
+
+
+
+        .test2{
+            color:red;
+        }
+        /*权重：10*/
+        div.test2{
+            color:blue;
+        }
+        /*权重：1+10=11*/
+        /*最后test2显示蓝色*/
+
+
+
+
+        #test3{
+            color:red;
+        }
+        /*权重：100*/
+        .c1.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11{
+            color:blue;
+        }
+        /*权重：90（注意权重是不进位的，这里就算有100个class选择器结果也是一样）*/
+        /*最后test3显示红色*/
+    </style>
+</head>
+<body class="body" id="body">
+    <div id="test1" class="test1">test1</div>
+    <div class="test2">test2</div>
+    <div id="test3" class="c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11">
+        test3
+    </div>
+</body>
+</html>

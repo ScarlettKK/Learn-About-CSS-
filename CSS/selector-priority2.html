@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic</title>
+    <style>
+        .test1{
+            color:red;
+        }
+        .test1{
+            color:blue;
+        }
+        /*同样权重的选择器，后写的生效*/
+        /*test1元素为蓝色*/
+
+
+
+        .test2{
+            color:red!important;
+        }
+        .test2{
+            color:blue;
+        }
+        /*带有important属性的元素无法被其他的覆盖，权重最高*/
+        /*test2元素为红色*/
+
+
+
+        #test3{
+            color:red;
+        }
+        /*写在HTML元素style属性里面的样式（见40行），权重更高，比id还高*/
+        /*test3元素为蓝色*/
+    </style>
+</head>
+<body class="body" id="body">
+    <div class="test1">test1</div>
+    <div class="test2">test2</div>
+    <div id="test3" style="color:blue">
+        <!-- 写在HTML元素style属性里面的样式，权重更高 -->
+        test3
+    </div>
+</body>
+</html>

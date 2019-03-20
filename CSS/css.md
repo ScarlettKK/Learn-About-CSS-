@@ -28,6 +28,10 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 ### 选择器分类和权重
 
+`参考代码`：[selector-priority.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/selector-priority.html)
+
+`参考代码`：[selector-priority2.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/selector-priority2.html)
+
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202601678-1477624302.png">
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202608280-405581363.png">

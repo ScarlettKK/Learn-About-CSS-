@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonts</title>
+    <style>
+        body{
+            /* font-family: "monaco"; */
+            /* font-family: "monaco", "PingFang SC"; */
+            /*上面这里只有英文能被应用monaco字体，而中文会被应用Mac指定中文字体PingFang SC*/
+            /*字体fallback机制是对于每一个字符来说的，对于每一个字符，都会去找其所对应的字体*/
+            font-family: "aaaaa", "monaco", "PingFang SC";
+            /*上面的aaaaa字体是不存在的，这事就会应用多字体fallback机制，去应用后面的字体*/
+        }
+        .chinese{
+            font-family: "PingFang SC", "Microsoft Yahei", monospace;
+            /*这里需要考虑平台的适用性，比如字体pingfang是Mac独有的，但是微软雅黑比较常见，但是在Mac上还是pingfang效果好，这时候就要把雅黑写在后面，方便字体fallback，能让Mac用户先应用pingfang字体*/
+            /*注意这里字体名称可以用引号包裹，但是字体族不行，不能加引号*/
+            /*字体族一般写在最后，是前面指定字体都不可行的时候，最后的选择*/
+            /* font-family: "Microsoft Yahei", serif; */
+            /* font-family: "serif"; */
+        }
+        .weight{
+            font-weight: bold;
+            font-weight: bolder;
+            font-weight: lighter;
+            font-weight: normal;
+            font-weight: 100;
+            /*字重*/
+        }
+        @font-face {
+            font-family: "IF";
+            src: url("./IndieFlower.ttf");
+            /*注意当自定义字体在此处引用远程url的时候（请求在线文件），如果跨域的话，一定要要求对方服务器，出具cors的头，也就是允许跨域*/
+            /*远程字体也可以通过link标签引用远程CSS文件获取*/
+            /*自定义字体*/
+        }
+        .custom-font{
+            font-family: IF;
+            /*自定义字体的使用*/
+        }
+    </style>
+</head>
+<body class="body" id="body">
+    Hello world 你好，世界
+    <div class="chinese">你好</div>
+    <div class="weight">你好 Hello World</div>
+    <div class="custom-font">你好 Hello World</div>
+    <!-- 这里类似阿里的iconfont，指定字母给定特殊的字体就会变成图标，参考：https://www.cnblogs.com/fashandian/p/6880892.html -->
+</body>
+</html>

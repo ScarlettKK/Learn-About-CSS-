@@ -30,8 +30,6 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 `参考代码`：[selector-priority.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/selector-priority.html)
 
-`参考代码`：[selector-priority2.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/selector-priority2.html)
-
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202601678-1477624302.png">
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190319202608280-405581363.png">
@@ -42,5 +40,15 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 ### 选择器解析方式和性能
 
+浏览器解析选择器的方式是从右往左的，也就是最右边的元素会先被寻找，然后再去验证其祖先是不是div，再以此类推
+
+这样的解析顺序是从性能考虑的，防止从左往右查找范围过大（假设.body中有好几百个div，那么还要一个一个去div里面找）
+
+从右往左的话，一般只需要定位那么几个小元素，然后找其父级进行验证即可，这样的方式更为高效
+
 ### 值的关注的选择器
+
+`参考代码`：[selector-priority2.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/selector-priority2.html)
+
+## 非布局样式
 

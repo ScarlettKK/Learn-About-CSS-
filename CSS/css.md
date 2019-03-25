@@ -52,6 +52,8 @@ CSS全称：Cascading Style Sheet 层叠样式表
 
 ## 非布局样式
 
+### 字体
+
 `参考代码`：[fonts.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/fonts.html)
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190321212942522-1603792244.png">
@@ -65,3 +67,25 @@ iconfont是什么？
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190321213257675-1243755166.png">
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190321213301998-1683433576.png">
+
+### 行高
+
+#### 行高的构成
+
+行高由line-box决定
+
+line-box由inline-box组成
+
+inline-box的高度会决定行高的高度
+
+#### 行高相关的现象和方案
+
+现象：图片下会有3px左右的空白
+
+原因：img按照inline元素排版，排版就会相对基线对齐，基线跟底线之间是有距离的，这个距离由字体大小决定（12px的字体有3px左右的空隙）
+
+解决方案：vertical-align：bottom，相对底线对齐。或者整成block、inline-block
+
+#### 行高的调整
+
+CSS中：line-height: xxx;

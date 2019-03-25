@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>line-height</title>
+    <style>
+        .cc1{
+            font-size:12px;
+        }
+        .cc2{
+            font-size:18px;
+        }
+        .cc3{
+            font-size:24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 应用：inline元素垂直居中 -->
+    <div style="border:solid 1px red;">
+        <span style="background:blue;color:#fff;font-size:20px;line-height:60px;">
+            居中xfg&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </span>
+    </div>
+    <!-- 下面文字会按照基线对齐，vertical-align的默认值是baseline（基线） -->
+    <!-- vertical-align的值也可以是一个px值，默认相对于基线调整 -->
+    <div class="c1">
+        <span class="cc1">第一段</span>
+        <span class="cc2">第二段</span>
+        <span class="cc3">第三段</span>
+    </div>
+    <!-- 图片下面为何有空白？ -->
+    <!-- 两者按照基线对齐，但是在基线到底线之间还是有一段空隙的，这就是img下面空白产生的原因 -->
+    <!-- 如何去掉图片下面的空隙？ -->
+    <!-- 按照inline元素排版，排版就会相对基线对齐，基线跟底线之间是有距离的，这个距离由字体大小决定（12px的字体有3px左右的空隙） -->
+    <!-- 解决方案：vertical-align：bottom，相对底线对齐 -->
+    <!-- 或者整成block、inline-block -->
+    <div style="background:red">
+        <span>文字</span>
+        <img src="test.png"/>
+    </div>
+    <div>
+        <div style="float:left">
+            <span>第一段</span>
+        </div>
+        <div style="float:left">
+            <span>第二段</span>
+        </div>
+    </div>
+</body>
+</html>

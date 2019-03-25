@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inline</title>
+    <style>
+        span{
+            background:red;
+        }
+        .c1{
+            line-height: 20px;
+        }
+        .c2{
+            line-height: 8px;
+        }
+        .c3{
+            line-height: 30px;
+        }
+        .c5{
+            line-height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="c1">inline box xfg中文</span>
+        <span class="c2">inline box</span>
+        <span class="c3">inline box</span>
+        inline box
+        <!-- 无标签包裹的元素，叫匿名inline-box，无论是匿名还是有标签的，都是inline-box -->
+        <span class="c5">inline box</span>
+        <!-- 上面的span中，行高都不一样，但是展示出来的行高却是一样的 -->
+        <!-- 行高会影响盒子内容外上下部分多余的宽度，会由一行之中line-height最高的元素决定 -->
+        <!-- line-height会撑起来line-box（inline元素组成的一行，也就是这里的div）的高度，但不会影响其本身布局（inline-box）的高度，而是影响了最外层盒子（div）的高度
+        line-box的高度由inline-box的高度决定，inline元素设置高度无效，唯有设置line-height才有高度 -->
+    </div>
+</body>
+</html>

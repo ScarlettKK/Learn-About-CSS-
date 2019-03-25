@@ -72,6 +72,8 @@ iconfont是什么？
 
 #### 行高的构成
 
+`参考代码`：[inline.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/inline.html)
+
 行高由line-box决定
 
 line-box由inline-box组成
@@ -79,6 +81,8 @@ line-box由inline-box组成
 inline-box的高度会决定行高的高度
 
 #### 行高相关的现象和方案
+
+`参考代码`：[line-height.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/line-height.html)
 
 现象：图片下会有3px左右的空白
 

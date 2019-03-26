@@ -98,6 +98,8 @@ CSS中：line-height: xxx;
 
 ### 背景
 
+`参考代码`：[background.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/background.html)
+
 #### 背景颜色
 
 英文单词、十六进制、rgba、hsla
@@ -109,6 +111,8 @@ linear-gradient
 #### 多背景叠加
 
 例子代码中用background实现的网格效果
+
+`参考代码`：[background-image.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/background-image.html)
 
 #### 背景图片和属性（雪碧图）
 

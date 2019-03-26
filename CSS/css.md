@@ -70,6 +70,8 @@ iconfont是什么？
 
 ### 行高
 
+参考文档：[一招帮你搞定基线位置(line box基线)](https://www.jianshu.com/p/6f9d7da220c8)
+
 #### 行高的构成
 
 `参考代码`：[inline.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/inline.html)
@@ -93,3 +95,46 @@ inline-box的高度会决定行高的高度
 #### 行高的调整
 
 CSS中：line-height: xxx;
+
+### 背景
+
+#### 背景颜色
+
+英文单词、十六进制、rgba、hsla
+
+#### 渐变色背景
+
+linear-gradient
+
+#### 多背景叠加
+
+例子代码中用background实现的网格效果
+
+#### 背景图片和属性（雪碧图）
+
+背景图可以指定位置（background-position）、重复不重复（background-repeat）、背景图大小（background-size）等
+
+也就是说，我们可以对背景图进行一些控制
+
+参考示例代码，雪碧图的原理是：
+
+	加载的都是同一张图，图上有很多图标，但是我们只显示这张图上面的一部分
+
+	控制：1.框大小 2.背景图不重复 3.背景的大小 4.背景图的位置
+
+	相当于background开了一个小窗口，只看这张图的一个小区域
+
+	有的时候，我们可能不需要那么大的图片，这时候需要缩小背景图片的大小（background-size），这时候坐标（background-position）也需要变化
+
+#### base64 和性能优化
+
+将图片转成文本（base64，一般在项目中由打包工具来转），这样就不需要http请求图片了，提高了性能
+
+缺点是图片本身体积会增大1/3，而且css文件体积会增大。并且这里增大了解码base64的开销。
+
+所以这里只适用于小图标、少量图片的情况
+
+#### 多分辨率适配
+
+n倍屏的处理方案：找一个n倍尺寸的大图片，在background-size里将其缩小n倍，即可
+

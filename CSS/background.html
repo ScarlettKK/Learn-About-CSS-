@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background</title>
+    <style>
+        body{
+            background:greenyellow;
+        }
+        .c1{
+            height:90px;
+            /*一些常见的背景颜色可以通过英文单词指定：red/green...还可以为greenyellow这种叠加色*/
+            /*另外还可以使用十六进制、rgba、hsla（色相、饱和度、亮度、透明度）来指定背景颜色*/
+            /* background:rgba(255,0,0, .3); */
+
+            /*背景还可以使用背景图*/
+            /* background:url(./test.png); */
+        }
+        .c2{
+            height:90px;
+            /*这里给背景色加上线性渐变，下面的意思是，从左边开始，由红到绿的渐变*/
+            /*background: -webkit-linear-gradient(left, red, green); */
+
+            /*下面的写法跟上面的一样，只是一个新的写法，left改成了to right，但是效果是一样的，都是从左到右*/
+            /* background: linear-gradient(to right, red, green); */
+
+            /*下面的代码指定了渐变的方向，0deg是从下到上的意思，90deg从左往右，180度从上往下，以此类推*/
+            /* background: linear-gradient(180deg, red, green); */
+
+            /*除此之外渐变还可以加上很多的颜色，开始是红色，10%是绿，50%是黄色，100%（最后）是蓝色*/
+            /* background: linear-gradient(135deg, red 0, green 10%, yellow 50%, blue 100%); */
+
+            /*利用背景色画有趣的图形：不需要线的地方透明，需要线的地方很窄，就可以画出图形*/
+            /*（举例开始部分）这里只有49.5%到50.5%是绿色，其他为透明，那么我们其实就在50%的地方画了一条绿线*/
+            background: linear-gradient(135deg, transparent 0, transparent 49.5%, green 49.5%, green 50.5%, transparent 50.5%, transparent 100%),
+                linear-gradient(45deg, transparent 0, transparent 49.5%, red 49.5%, red 50.5%, transparent 50.5%, transparent 100%);
+            /*这里指定了背景图的大小，注意背景图的大小是作图区域的大小，不够整个空间（c2）大的话，会平铺满整个空间*/
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+
+    </div>
+    <div class="c2">
+
+    </div>
+</body>
+</html>

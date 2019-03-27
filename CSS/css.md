@@ -144,6 +144,8 @@ n倍屏的处理方案：找一个n倍尺寸的大图片，在background-size里
 
 ### 边框
 
+`参考代码`：[border.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/border.html)
+
 #### 边框的属性： 线形 大小(粗细) 颜色
 
 eg: `border:dashed 5px red`

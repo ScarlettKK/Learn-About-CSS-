@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border</title>
+    <style>
+        /*边框的属性： 大小(粗细) 线形 颜色*/
+        .c1{
+            width:400px;
+            height: 200px;
+            /* border: 1px solid red; */
+            /* border:5px solid red; */
+             border:5px dotted red; 
+            /*border:5px dashed red;*/
+        }
+        /*边框也可以使用背景图片！！！*/
+        .c2{
+            width:400px;
+            height: 200px;
+            /* border-width: 30px; */
+            border:30px solid transparent;
+            /*这里需要先把边框整体设置为需要的宽度，然后是直线，而且为透明边框*/
+            border-image:url(./border.png) 30 round;
+            /*边框背景图片设置：图片地址 图片拐角处（四个角）的缩放大小 图片线部分(除了拐角处的部分)的显示方式(默认为拉伸，还可以是repeat，以及round。round对于重复图片边框效果最好，会拼成整数个重复，而repeat会出现被切了一半的边框)*/
+        }
+        .c3{
+            width:0px;
+            height: 200px;
+            border-bottom:30px solid red;
+            /* border-right:30px solid blue; */
+            border-left:30px solid transparent;
+            border-right:30px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+
+    </div>
+    <div class="c2">
+
+    </div>
+    <div class="c3">
+
+    </div>
+</body>
+</html>

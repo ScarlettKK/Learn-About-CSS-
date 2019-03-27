@@ -142,3 +142,24 @@ linear-gradient
 
 n倍屏的处理方案：找一个n倍尺寸的大图片，在background-size里将其缩小n倍，即可
 
+### 边框
+
+#### 边框的属性： 线形 大小(粗细) 颜色
+
+eg: `border:dashed 5px red`
+
+#### 边框背景图
+
+参考博客：[CSS border-image属性](https://www.cnblogs.com/panshijie205/p/6851759.html)
+
+#### 边框衔接（三角形、梯形）
+
+用边框（border实现）
+
+原理：其实border（eg；border-left、border-bottom）交界的地方是斜切的
+
+当盒子模型只有边框宽度，没有内容宽度的时候，就会出现三角形。盒子模型有宽度高度的时候会出现梯形
+
+在三角形上面叠加圆角（border-radius）就会出现扇形
+
+

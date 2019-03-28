@@ -164,4 +164,9 @@ eg: `border:dashed 5px red`
 
 在三角形上面叠加圆角（border-radius）就会出现扇形
 
+### 滚动
+
+#### 滚动行为和滚动条
+
+与CSS属性overflow有关
 

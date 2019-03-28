@@ -82,6 +82,10 @@ line-box由inline-box组成
 
 inline-box的高度会决定行高的高度
 
+line-box与inline-box的关系：
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190328095406109-1749838054.png">
+
 #### 行高相关的现象和方案
 
 `参考代码`：[line-height.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/line-height.html)
@@ -153,6 +157,14 @@ eg: `border:dashed 5px red`
 #### 边框背景图
 
 参考博客：[CSS border-image属性](https://www.cnblogs.com/panshijie205/p/6851759.html)
+
+border-image原理分析：
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190328095343365-895977841.png">
+
+border-image-slice属性分析：
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190328095328505-914504856.png">
 
 #### 边框衔接（三角形、梯形）
 

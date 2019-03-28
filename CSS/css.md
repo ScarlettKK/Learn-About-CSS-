@@ -166,7 +166,12 @@ eg: `border:dashed 5px red`
 
 ### 滚动
 
+`参考代码`：[scroll.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/scroll.html)
+
 #### 滚动行为和滚动条
 
 与CSS属性overflow有关
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190328095309284-1256845290.png">
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201903/1147701-20190328095317409-1873641576.png">

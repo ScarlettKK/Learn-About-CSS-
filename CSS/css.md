@@ -190,6 +190,8 @@ border-image-slice属性分析：
 
 ### 文字折行
 
+`参考代码`：[wrap.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/wrap.html)
+
 当文字内容长度超过文本框的宽度的时候，我们就要考虑换行了
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190401123222988-1519824336.jpg">

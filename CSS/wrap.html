@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>warp</title>
+    <style>
+        .c1{
+            border: 1px solid;
+            width: 8em;
+            /*换行的时候是否要保留单词，默认要保留一整单词不换行*/
+            overflow-wrap: normal;
+            /*break-word单词可以换行，单词可以折行，但仍旧会尽量保持单词的完整性，可以结合下面的keep-all来用*/
+            /*overflow-wrap: break-word;*/
+            
+            /*word-break：把单词当作一个单位，还是把字母当成一个单位，还是把一个中文句子当成一个单位？*/
+            /*使用normal的时候，长单词不会被换行，会保留句子单词特性，但中文句子也会被换行*/
+            word-break: normal;
+            /*使用break-all的时候，长单词超出的部分会被换行，单词不会被当成整体，而是被拆开的很散*/
+            /*word-break: break-all;*/
+            /*keep-all所有单词都会被保持完整，包括中文句子*/
+            /*word-break: keep-all;*/
+
+            /*white-space: normal：正常换行*/
+            white-space: normal;
+            /*nowrap：整个句子都不换行*/
+            /*white-space: nowrap;*/
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 下面的英文里面有一个超级长的单词，这个超级长的单词不会换行，而是超出文本显示 -->
+    <div class="c1">
+        This is a long and Supercalifragilisticexpialidocious sentence. 一二三四五六，七八九零一二，这是一句巨长巨长又没有空间可以换行的句子哦。
+    </div>
+</body>
+</html>

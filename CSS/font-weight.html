@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonts</title>
+    <style>
+        .weight{
+            /*我们可以看到font-weight的取值很多，默认是nromal，与下面设置数字400效果同*/
+            font-weight: normal;
+            font-weight: bold; /*粗体，与下面设置数字700效果同*/
+            font-weight: bolder; /*更粗体，效果取决于父级（eg：父级400，这里可能将会是600/700/800），不能在一开始确定*/
+            font-weight: lighter; /*细体，效果取决于父级，同上*/
+            font-weight: 200; /*取值100-900，每次只能取整百（不可250）的值，表示最细到最粗*/
+        }
+    </style>
+</head>
+<body class="body" id="body">
+    <div class="weight">你好 Hello World</div>
+</body>
+</html>

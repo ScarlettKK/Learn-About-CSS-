@@ -198,3 +198,4 @@ border-image-slice属性分析：
 
 ### 装饰性属性及其他
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190402201609159-248727532.png">

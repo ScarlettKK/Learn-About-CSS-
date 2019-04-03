@@ -201,3 +201,10 @@ border-image-slice属性分析：
 `参考代码`：[font-weight.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/font-weight.html)
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190402201609159-248727532.png">
+
+### CSS Hack
+
+针对IE7、8、6的使用场景，最近可能用的少了
+
+
+写的时候要【注意】：需要把标准属性写在前面，hack写在后面，不然在IE中hack和标准都会生效，标准会覆盖hack的效果。注意在高级浏览器中hack不会生效。

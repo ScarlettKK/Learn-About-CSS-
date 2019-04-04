@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkbox</title>
+    <!-- 这里将用CSS的方式实现点击checkbox切换对勾图片的效果，而不用JS -->
+    <!-- CSS单选框的美化 -->
+    <!-- 原理：CSS雪碧图 -->
+    <style>
+        .checkbox{
+
+        }
+        /*隐藏掉原来checkbox的勾选框*/
+        .checkbox input{
+            display: none;
+        }
+        /*这里的+号表示CSS选择器选中与其（input）相邻的兄弟元素label（回顾CSS选择器部分）*/
+        .checkbox input + label{
+            background:url(./checkbox1.png) left center no-repeat;
+            background-size:20px 20px;
+            padding-left:20px;
+        }
+        /*CSS为我们提供了这样一个input状态选择器input:checked*/
+        .checkbox input:checked + label{
+            background-image:url(./checkbox2.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="checkbox">
+        <input type="checkbox" id="handsome"/>
+        <!-- 这里的id和for在之前表单的地方就已经说过了，不记得可以去回顾 -->
+        <label for="handsome">我很帅</label>
+    </div>
+</body>
+</html>

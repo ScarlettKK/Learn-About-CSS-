@@ -208,3 +208,17 @@ border-image-slice属性分析：
 
 
 写的时候要【注意】：需要把标准属性写在前面，hack写在后面，不然在IE中hack和标准都会生效，标准会覆盖hack的效果。注意在高级浏览器中hack不会生效。
+
+### 纯CSS的更多骚操作
+
+#### 漂亮的单选框
+
+`参考代码`：[checkbox.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS/checkbox.html)
+
+#### tabs/幻灯片
+
+提示：用radio（单选）实现，未选中的时候，display:none，选中的时候，display:block
+
+#### tree树状图
+
+提示：使用checkbox，如上面的tabs，控制display

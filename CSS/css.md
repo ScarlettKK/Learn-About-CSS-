@@ -220,8 +220,12 @@ border-image-slice属性分析：
 
 #### tabs/幻灯片
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190406232806805-86430447.png">
+
 提示：用radio（单选）实现，未选中的时候，display:none，选中的时候，display:block
 
 #### tree树状图
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190406232809643-1268931610.png">
 
 提示：使用checkbox，如上面的tabs，控制display

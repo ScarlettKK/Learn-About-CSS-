@@ -229,3 +229,60 @@ border-image-slice属性分析：
 <img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190406232809643-1268931610.png">
 
 提示：使用checkbox，如上面的tabs，控制display
+
+## CSS面试真题
+
+1. CSS样式（选择器）的优先级
+	
+	通过计算权重确定
+
+	!important
+
+	内联样式
+
+	后写的优先级高
+
+2. 雪碧图的作用
+
+	通过background-position控制背景图位移
+
+	减少http请求数，提高加载性能
+
+	有一些情况下可以减少图片大小（颜色种类基本一样的时候）
+
+3. 自定义字体的使用场景
+
+	宣传/品牌/banner等固定文案
+
+	字体图标（icon）
+
+4. base64的使用
+
+	图片 -> 文本
+
+	用于减少http请求
+
+	适用于小图片
+
+	体积会增大，约为原图的4/3
+
+5. 伪类和伪元素的区别？
+
+	伪类表状态（hover、focused...）
+
+	伪元素是真的有元素（before、after）
+
+	一般在写法上伪类单冒号、伪元素双冒号
+
+6. 如何美化checkbox
+
+	label[for]和id
+
+	隐藏原生的input
+
+	:checked + label
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .left{
+            background:red;
+        }
+        .right{
+            background:blue;
+        }
+        table{
+            width:800px;
+            height:200px;
+            border-collapse: collapse;
+        }
+
+        /*通过display: table;用div模拟表格*/
+        .table{
+            margin-top:20px;
+            display: table;
+            width:800px;
+            height:200px;
+        }
+        .table-row{
+            display: table-row;
+        }
+        .table-cell{
+            vertical-align: center;
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+    <!-- 表格布局 -->
+    <table>
+        <tr>
+            <td class="left">左</td>
+            <td class="right">右</td>
+        </tr>
+    </table>
+    <!-- 用div模拟table，但是div中文字默认不是垂直居中的，这里需要再单独设置 -->
+    <div class="table">
+        <div class="table-row">
+            <div class="left table-cell">
+                左
+            </div>
+            <div class="right table-cell">
+                右
+            </div>
+        </div>
+    </div>
+</body>
+</html>

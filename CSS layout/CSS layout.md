@@ -22,6 +22,8 @@ flexbox布局
 
 ## table 表格布局
 
+`参考代码`：[03-table.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/03-table.html)
+
 简单、好理解、使用方便
 
 带有文字默认垂直居中的样式，并且会自动调整布局（eg：左边缩小20px，右边自动增大20px）
@@ -51,9 +53,5 @@ position 确定元素的位置
 	static / relative / absolute / fixed
 
 	z-index 适用于：已经定位的元素（即position:relative/absolute/fixed）
-
-
-
-
 
 

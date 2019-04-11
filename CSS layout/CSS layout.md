@@ -27,3 +27,33 @@ flexbox布局
 带有文字默认垂直居中的样式，并且会自动调整布局（eg：左边缩小20px，右边自动增大20px）
 
 但现在用的不多了
+
+## 一些布局属性
+
+### 盒子模型
+
+默认情况下，宽度和高度【只对内容】生效
+
+padding：边框到内容之间的留白
+
+margin：离别的元素的距离，在边框之外
+
+一个盒子占用的空间 = 内容宽度 + padding宽 + border宽
+
+### display / position
+
+display 确定元素的显示类型
+
+	block / inline / inline-block
+
+position 确定元素的位置
+
+	static / relative / absolute / fixed
+
+	z-index 适用于：已经定位的元素（即position:relative/absolute/fixed）
+
+
+
+
+
+

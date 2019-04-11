@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .block{
+            height:200px;
+            background:red;
+        }
+        .inline{
+            display: inline;
+            background: green;
+        }
+        .inline-block{
+            display: inline-block;
+            width:200px;
+            height:100px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- block 独占一行 -->
+    <div class="block">
+        block
+    </div>
+    <!-- inline挤在一行，没有宽高，表现像文本，有对齐的方式 -->
+    <div class="inline">inline</div>
+    <div class="inline">inline</div>
+    <!-- inline-block 挤在一行 但有宽高，表现像文本，有对齐的方式 -->
+    <div class="inline-block">inline-block</div>
+</body>
+</html>

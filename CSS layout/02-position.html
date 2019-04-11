@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            background:red;
+            width:100px;
+            height:100px;
+        }
+        .p2{
+            position: relative;
+            left:10px;
+            top:-10px;
+            background:blue;
+        }
+        .p3{
+            position: absolute;
+            left:80px;
+            top:30px;
+            background: green;
+        }
+        .p4{
+            position: fixed;
+            left:0;
+            bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 正常文档流中 -->
+    <div class="p1">
+        position:static
+    </div>
+    <!-- 正常文档流中，可以偏移，相对于元素本身的位置偏移 -->
+    <!-- 原来的位置无论它在不在，坑都保留，不会更改文档布局计算方式 -->
+    <div class="p2">
+        position:relative
+    </div>
+    <!-- 脱离正常的文档流，对其他元素的正常布局不会造成影响 -->
+    <div class="p3">
+        position:absolute
+        <!-- 相对于最近的父级 relative 或者 absolute 元素定位，直到body -->
+        <!-- 层级 z-index 默认按照顺序层叠，我们也可以手动改变它的层级 -->
+        <!-- z-index 适用于：已经定位的元素（即position:relative/absolute/fixed） -->
+        <div class="p3-3" style="position:absolute;width:50px;height:50px;background:yellow"></div>
+    </div>
+     <!-- 脱离正常的文档流，对其他元素的正常布局不会造成影响 -->
+     <!-- 相对于可视区域（屏幕）固定位置，定死在屏幕的某个位置 -->
+    <div class="p4">
+        position:fixed;
+    </div>
+    <!-- 正常文档流中 -->
+    <div class="p5">
+        p5
+    </div>
+</body>
+</html>

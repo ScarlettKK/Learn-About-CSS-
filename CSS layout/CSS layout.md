@@ -34,6 +34,8 @@ flexbox布局
 
 ### 盒子模型
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201904/1147701-20190411214956586-94148047.png">
+
 默认情况下，宽度和高度【只对内容】生效
 
 padding：边框到内容之间的留白
@@ -46,9 +48,13 @@ margin：离别的元素的距离，在边框之外
 
 display 确定元素的显示类型
 
+`参考代码`：[01-display.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/01-display.html)
+
 	block / inline / inline-block
 
 position 确定元素的位置
+
+`参考代码`：[02-position.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/02-position.html)
 
 	static / relative / absolute / fixed
 

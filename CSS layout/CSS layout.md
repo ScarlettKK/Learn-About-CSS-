@@ -62,7 +62,7 @@ position 确定元素的位置
 
 ## flexbox
 
-`参考代码`：[07-flex.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/08-flex.html)[07-flex.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/08-flex.html)
+`参考代码`：[07-flex.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/08-flex.html) [08-flex.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/08-flex.html)
 
 CSS中真正意义上用于布局的属性
 

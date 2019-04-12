@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*display: flex;属性要在父元素里面定义，而不是需要flex布局的元素*/
+        .container{
+            width:800px;
+            height:200px;
+            display: flex;
+            border:1px solid black;
+        }
+        .flex{
+            background:red;
+            margin:5px;
+            /*这里的flex代表权重，2的话就会占据两份空间*/
+            /*也可以固定它的宽度为xx px，但是要设置flex:none;*/
+            flex:1
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 下面的布局都是并列且平分的 -->
+        <div class="flex">
+            flex
+        </div>
+        <div class="flex">
+            flex
+        </div>
+        <div class="flex">
+            flex
+        </div>
+        <div class="flex">
+            flex
+        </div>
+        <div class="flex">
+            flex
+        </div>
+    </div>
+</body>
+</html>

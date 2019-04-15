@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 利用浮动实现布局 -->
+    <style>
+        .container{
+            width:800px;
+            height:200px;
+        }
+        .left{
+            background:red;
+            /* float:left; */
+            /* height:100%; */
+            width:200px;
+            position: absolute; /*使用position: absolute;也能达到float的效果，但是absolute完全脱离文档流，缺乏了一些适应性*/
+            height:200px;
+        }
+        .right{
+            background:blue;
+            float:right;
+            width:200px;
+            height:100%;
+        }
+        .middle{
+            margin-left:200px;
+            margin-right:200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 一个常规布局方案：左边float left，右边不float，但给右边一个margin-left，宽度等于左边宽度 -->
+    <!-- 下面是三栏布局的实现方案 -->
+    <div class="container">
+        <!-- 左边float left -->
+        <div class="left">
+            左
+        </div>
+        <!-- 右边float right -->
+        <div class="right">
+            右
+        </div>
+        <!-- 中间的左右margin等于左右div宽度 -->
+        <div class="middle">
+            中间
+        </div>
+        <!-- 这里需要把右边的div写到中间前面去，根据位置尽量靠上，位置尽量靠左（右）的原理 -->
+        <!-- 如果中间的div先占据了位置，右边的div会被挤到下面去，因为它绕不过去 -->
+        <!-- 那么我们尽量先给右边的div安排位置 -->
+    </div>
+</body>
+</html>

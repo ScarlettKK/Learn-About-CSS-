@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            background:red;
+            width:400px;
+            margin:20px;
+        }
+        .p1{
+            background:green;
+            float:left;
+            width:200px;
+            height:50px;
+        }
+        /*防止父元素高度塌陷*/
+        /*下面是靠其他元素（伪元素）的高度把div撑起来*/
+        .container2::after{
+            content: 'aaa';
+            clear:both; /*保证这个元素的左右两边都是干净的，没有浮动元素*/
+            display: block; /*改默认inline为block*/
+            visibility: hidden;/*不显示，但存在*/
+            height:0;/*不占高度*/
+        }
+        /*还有一种方案是overflow：auto/hidden，让父元素去关注里面子元素的高度*/
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 形成“块”（BlockFormatContent），这个块会负责自己的布局，宽高可以自己设置，就算这个元素本身是个inline元素 -->
+        <span class="p1">
+            float
+        </span>
+        <!-- 对元素的布局不会产生影响 -->
+        <!-- 对文字布局会产生影响，文字会绕开float元素 -->
+        <div class="p2">
+            很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字
+        </div>
+    </div>
+
+    <div class="container container2">
+        <!-- span中的字体被第一个float的span挤到了右边 -->
+        <span>写几个字</span>
+        <span class="p1">
+            float
+        </span>
+        <!-- 这时候要再去装第二个float left的span，container2的宽度显得有些不够 -->
+        <!-- 于是遵循着尽量靠上，尽量靠左（右）的原则，第二个span会出现在浏览器效果中的位置，因为普通span的高度比较小 -->
+        <!-- 扩展：当container2宽度足够的时候（装得下全部三个span），普通span中的文字会出现在两个float的span的后面 -->
+        <!-- 当container2的宽度不足够装下两个float的span的时候，两个float的span会并排出现在最左边 -->
+        <span class="p1">
+            float
+        </span>
+    </div>
+    <div class="container" style="height:200px;background:blue;">
+    </div>
+</body>
+</html>

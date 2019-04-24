@@ -116,6 +116,8 @@ CSS中真正意义上用于布局的属性
 
 ## inline-block
 
+`参考代码`：[06-inline-block.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/06-inline-block.html)
+
 像文本一样排block元素
 
 没有清除浮动等问题
@@ -133,6 +135,8 @@ CSS中真正意义上用于布局的属性
 适用场景：定宽的div，对于自适应宽度不太适合
 
 ## 响应式设计和布局
+
+`参考代码`：[09-responsive.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/09-responsive.html)
 
 让页面能够在不同设备上正常使用
 

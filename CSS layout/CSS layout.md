@@ -148,6 +148,25 @@ CSS中真正意义上用于布局的属性
 
 	rem / viewport / media query
 
+## 一些主流网站的布局方案
+
+腾讯网：float布局，左右定宽。使用伪元素clear:both清除浮动
+
+网易：float布局，使用伪元素clear:both清除浮动
+
+百度：float布局，使用 div 元素clear:both清除浮动（为了适配更低端的浏览器）
+
+淘宝：float布局，使用伪元素clear:both清除浮动
+
+国内各大网站基本上都是用float进行布局，因为兼容性比较好，然后一般使用定宽+清除浮动的方式布局
+
+国外网站如苹果官网会使用flex box布局，但也会做一些兼容性的处理
+
+
+
+
+
+
 
 
 

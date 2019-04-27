@@ -281,8 +281,3 @@ border-image-slice属性分析：
 	隐藏原生的input
 
 	:checked + label
-
-
-
-
-

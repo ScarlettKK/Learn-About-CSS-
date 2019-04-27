@@ -136,7 +136,7 @@ CSS中真正意义上用于布局的属性
 
 ## 响应式设计和布局
 
-`参考代码`：[09-responsive.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/09-responsive.html)
+`参考代码`：[09-responsive.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/09-responsive.html)  [10-responsive.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20layout/10-responsive.html)
 
 让页面能够在不同设备上正常使用
 

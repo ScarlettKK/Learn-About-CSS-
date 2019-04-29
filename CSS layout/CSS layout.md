@@ -162,11 +162,44 @@ CSS中真正意义上用于布局的属性
 
 国外网站如苹果官网会使用flex box布局，但也会做一些兼容性的处理
 
+## CSS布局面试真题
 
+1. 实现两栏（三栏）布局的方法
 
+	(1)表格布局
+	
+	(2)float + margin布局（兼容性较好）
 
+	(3)inline-block布局
 
+	(4)flexbox布局
 
+2. position: absolute/fixed有什么区别
 
+	absolute相对最近的absolute/relative进行定位
 
+	fixed相对于屏幕（viewport），在移动端适配不好，老旧的移动端设备基本上无法使用
 
+3. display: inline-block的间隙
+	
+	原因：字符间距
+
+	解决：消灭字符（html的div中间不要留白，可以加上注释）或者消灭间距（font-size:0）
+
+4. 如何清除浮动
+
+	原因：浮动的元素不会占据父元素的布局空间，可能会超出父元素的范围，对其他元素产生影响
+
+	解决：让盒子（父元素）负责自己的布局
+
+		overflow: hidden(auto) 设置超出父元素的范围之后了要怎么办
+
+		::after{clear:both} 把一个伪元素放在浮动元素的后面，让父元素一定要包含这个在后面的伪元素，从而包含浮动元素。注意这个伪元素左右的浮动元素都要被清除掉。
+
+5. 如何适配移动端页面？
+
+	viewport
+
+	rem / viewport / media query
+
+	设计上： 隐藏 折行 自适应

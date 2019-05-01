@@ -7,3 +7,4 @@ Part 2 [CSS Basic](https://github.com/ScarlettKK/Learn-About-CSS-/tree/master/CS
 
 Part 3 [CSS Layout](https://github.com/ScarlettKK/Learn-About-CSS-/tree/master/CSS%20layout)
 
+Part 4 [CSS Effects](https://github.com/ScarlettKK/Learn-About-CSS-/tree/master/CSS%20Effects)

@@ -4,6 +4,14 @@
 
 ## box-shadow
 
+作用：
+
+营造层次感（立体感）
+
+充当没有宽度的边框（box-shadow不占据空间，不影响排版）
+
+特殊效果（不停地复制）
+
 ## text-shadow
 
 ## border-radius

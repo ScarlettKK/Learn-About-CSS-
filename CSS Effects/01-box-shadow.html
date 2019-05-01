@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            background:red;
+            width:200px;
+            height:200px;
+            margin: 100px;
+             /*box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2); */
+             /*内阴影*/
+             /*box-shadow: inset 5px 5px 10px 0 rgba(0,0,0,.2); */
+            /*无偏移 只给了扩展 无模糊，最终效果像边框*/
+            box-shadow: 0 0 0 5px green;
+            /*扩展值（第四个值）为负数的时候，外阴影区域会缩小*/
+            /*出来的效果可以当成是div形状的一份复制*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

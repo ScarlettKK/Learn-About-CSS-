@@ -14,6 +14,10 @@
 
 ## text-shadow
 
+立体感
+
+印刷品质感
+
 ## border-radius
 
 ## background

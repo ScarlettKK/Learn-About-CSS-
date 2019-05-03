@@ -18,6 +18,8 @@
 
 ## text-shadow
 
+`参考代码`：[04-text-shadow.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Effects/04-text-shadow.html)
+
 立体感
 
 印刷品质感

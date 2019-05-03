@@ -24,6 +24,14 @@
 
 ## border-radius
 
+圆角矩形
+
+圆形
+
+半圆/扇形
+
+一些奇怪的角角
+
 ## background
 
 ## clip-path

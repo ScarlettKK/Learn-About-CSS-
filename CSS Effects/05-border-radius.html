@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 0;
+            height: 0;
+            background: red;
+            border: 10px solid green;
+            /*最简单的10px圆角的矩形*/
+            /* border-radius: 10px; */
+
+
+            /*当圆角为50%的时候（且div为正方形），就出现了圆*/
+            /* border-radius: 50%; */
+            /*注意当div有同时宽度高度 和 border的时候
+            需要作圆，最好写50%
+            直接定义px，会以div宽度+border宽度作半径，这点要注意*/
+
+
+            /*border-radius也可以像border一样，定义某个方向上面的圆角，这样我们就可以创造出扇形*/
+            /*border: 50px solid green;
+            这里是水平方向100/垂直方向50
+            border-top-left-radius: 100px 50px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;*/
+
+
+            /*一些奇怪的角角：椭圆半径，一个长轴一个短轴 水平方向/垂直方向 */
+            border-radius: 10px 10px 10px 10px / 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

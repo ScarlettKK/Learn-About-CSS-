@@ -42,8 +42,8 @@
 
 渐变
 
-雪碧图动画（新）
+雪碧图动画（新）`参考代码`：[06-background-animate.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Effects/06-background-animate.html)
 
-背景图尺寸适应（新）
+背景图尺寸适应（新）`参考代码`：[07-background-size.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Effects/07-background-size.html)
 
 ## clip-path

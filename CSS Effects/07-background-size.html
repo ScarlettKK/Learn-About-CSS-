@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 背景图尺寸适应（新） -->
+    <style>
+        .container{
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+            background:url(./panda.jpg);
+            
+            /*background-size控制背景图的大小*/
+            /*contain：图片长宽比不变，让图片完整地显示出来，多的地方就留白*/
+            background-size: contain;
+            /*cover：覆盖整个div且保持长宽比不变*/
+            /* background-size: cover; */
+
+            /*background-repeat控制背景图是否重复平铺*/
+            background-repeat: no-repeat;
+
+            /*background-position控制背景图的位置*/
+            background-position: center center;
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

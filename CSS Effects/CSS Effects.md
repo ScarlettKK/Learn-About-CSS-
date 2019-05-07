@@ -26,8 +26,6 @@
 
 ## border-radius
 
-`参考代码`：[05-border-radius.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Effects/05-border-radius.html)  [03-box-shadow.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Effects/03-box-shadow.html)（叮当猫的嘴）
-
 圆角矩形
 
 圆形
@@ -36,7 +34,7 @@
 
 一些奇怪的角角
 
-## background
+## contain
 
 纹理、图案
 
@@ -47,3 +45,20 @@
 背景图尺寸适应（新）
 
 ## clip-path
+
+对容器进行裁剪，也就是指定容器的一部分是显示的，剩下的部分就被裁减掉了
+
+常见几何图形
+
+自定义路径
+
+	特性：
+
+	1. 容器占位不变，也就是原来的div还是存在的，只是被裁减得只有一部分可以显示
+
+	2. 这样使得一些容器内的动画就很好做
+
+	3. 浏览器兼容性可能没那么好，但功能强大
+
+
+

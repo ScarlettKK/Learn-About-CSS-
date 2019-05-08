@@ -46,6 +46,8 @@
 
 ## clip-path
 
+`参考代码`：[08-clip-path.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Effects/08-clip-path.html)
+
 对容器进行裁剪，也就是指定容器的一部分是显示的，剩下的部分就被裁减掉了
 
 常见几何图形

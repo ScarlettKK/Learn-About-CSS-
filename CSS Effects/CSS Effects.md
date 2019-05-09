@@ -78,4 +78,58 @@ transform只表示对元素的样式的变换，并不带有动画，跟translat
 
 缺点：性能没有那么好，渲染起来可能会有误差（浏览器的锅）
 
+## CSS 面试真题
 
+1. 如何用一个div画XXX
+
+	box-shadow 无限投影
+
+	::before / ::after （伪元素）
+
+2. 如何产生不占空间的边框（精细排版）
+
+	box-shadow 放大
+
+	outline（定制度不高）
+
+	修改box-sizing（盒模型）为border-box
+
+3. 如何实现圆形元素（头像）
+
+	border-radius:50%
+
+4. 如何实现ios图标的圆角（非标准圆角）
+
+	clip-path:(svg) （这里估计要借助外部工具）
+
+5. 如何实现半圆、扇形等图形
+
+	利用border-radius的几种组合：
+
+	有无边框
+
+	边框粗细
+
+	圆角半径
+
+6. 如何实现背景图居中显示 / 不重复 / 改变大小
+
+	background-position
+
+	background-repeat
+
+	background-size（cover/contain）
+
+7. 如何平移/放大一个元素
+
+	transform: translateX(100px);
+	
+	transform: scale(2);
+
+8. 如何实现3D效果
+
+	perspective: 500px; 透视角度
+
+	transform-style: preserve-3d; 保留3d效果
+
+	transform: translate rotate ... 具体的变换

@@ -105,7 +105,9 @@ transform只表示对元素的样式的变换，并不带有动画，跟translat
 4. 如何实现ios图标的圆角（非标准圆角）
 
 	clip-path:(svg) （这里估计要借助外部工具）
-
+	
+<img src="https://img2018.cnblogs.com/blog/1147701/201905/1147701-20190509170835029-1303860656.png">
+	
 5. 如何实现半圆、扇形等图形
 
 	利用border-radius的几种组合：

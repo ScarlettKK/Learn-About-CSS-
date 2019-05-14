@@ -28,6 +28,8 @@ CSS中的动画类型：
 
 ## transition 补间动画
 
+`参考代码`：[01-transition.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Animation/01-transition.html)
+
 只能计算以下属性：【注意：display:none -> block不能运用补间动画！因为需要计算中间过程，但不能计算所有属性的中间过程】
 
 	位置 - 平移（left/right/margin/transform）

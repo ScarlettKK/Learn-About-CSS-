@@ -25,3 +25,21 @@ CSS中的动画类型：
 2. keyframe 关键帧动画（有很多个关键帧，也就是多个补间动画拼起来的）
 
 3. 逐帧动画（有很多帧画面，只能从一个跳到另一个，类似小人书）
+
+## transition 补间动画
+
+只能计算以下属性：【注意：display:none -> block不能运用补间动画！因为需要计算中间过程，但不能计算所有属性的中间过程】
+
+	位置 - 平移（left/right/margin/transform）
+
+	方位 - 旋转（transform）
+
+	大小 - 缩放（transform）
+
+	透明度 - opacity
+
+	其他 - 线性变换（transform）
+
+	颜色（background/color）最近才支持
+
+

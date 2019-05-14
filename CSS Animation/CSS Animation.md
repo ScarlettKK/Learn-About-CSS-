@@ -42,4 +42,10 @@ CSS中的动画类型：
 
 	颜色（background/color）最近才支持
 
+transition动画效果函数（transition-timing-function）：
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201905/1147701-20190514115533788-77803076.png">
+
+transition调试工具：
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201905/1147701-20190514115540398-1481196681.png">

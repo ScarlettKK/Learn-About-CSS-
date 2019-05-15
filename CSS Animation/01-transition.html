@@ -12,12 +12,18 @@
             background: red;
             /*transition: 要运用动画的属性 动画时间*/
             /*transition: all 1s;*/
-            transition: width 1s, background 3s;
+            transition: width 3s, background 3s;
 
 
             /*指定动画时间以及进度*/
-             transition-timing-function: linear; 
+             /*transition-timing-function: linear; */
+
+
+
+             /*也可以自定义动画函数，工具参考：https://matthewlein.com/tools/ceaser*/
             /*transition-timing-function: cubic-bezier(0.465, -0.460, 0.525, 1.435);*/
+            transition: all 500ms cubic-bezier(0.495, -0.470, 0.510, 1.545); /* custom */
+
 
 
             /* 延迟xx时间再执行动画 */

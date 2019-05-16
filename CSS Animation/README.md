@@ -54,6 +54,8 @@ transition调试工具：
 
 ## keyframe 关键帧动画
 
+`参考代码`：[02-keyframe.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Animation/02-keyframe.html)
+
 相当于多个补间动画
 
 与元素状态的变化无关，可以自动播放（不是必须有个hover才有动画，而是可以自动播放动画）

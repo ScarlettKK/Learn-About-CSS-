@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /*这里的“run”是keyframes动画的名字（自定义）*/
+            animation: run 1s linear;
+
+
+            /*animation-direction：动画反向播放*/
+            /* animation-direction: reverse; */
+
+
+            /*决定动画完成停在哪里*/
+            /*forwards：动画运行完毕，保留在完成时候的状态*/
+            /*backwards：动画运行完毕，回到开始的状态*/
+            /* animation-fill-mode: forwards; */
+
+
+
+            /*循环次数：无限循环/或者指定次数*/
+            animation-iteration-count: infinite;
+
+
+            /*暂停动画的播放*/
+            /* animation-play-state: paused; */
+        }
+        /*这里的“run”是keyframes动画的名字（自定义）*/
+        @keyframes run{
+            0%{/*这里0%可以写成from*/
+                width: 100px;
+            }
+            50%{ /*可以自由定义中间状态*/
+                width: 800px;
+            }
+            100%{/*这里100%可以写成to*/
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

@@ -51,3 +51,11 @@ transition动画效果函数（transition-timing-function）：
 transition调试工具：
 
 <img src="https://img2018.cnblogs.com/blog/1147701/201905/1147701-20190514115540398-1481196681.png">
+
+## keyframe 关键帧动画
+
+相当于多个补间动画
+
+与元素状态的变化无关，可以自动播放（不是必须有个hover才有动画，而是可以自动播放动画）
+
+定义更加灵活

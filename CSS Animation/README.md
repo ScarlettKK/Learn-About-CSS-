@@ -64,6 +64,8 @@ transition调试工具：
 
 ## 逐帧动画
 
+`参考代码`：[03-animal.html](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Animation/03-animal.html)
+
 每一帧都是关键帧，没有补间动画，是keyframe 关键帧动画的一种特殊用法
 
 适用于【无法】补间计算的动画（有得补间当然选择补间，省事，省空间）

@@ -70,7 +70,7 @@ transition调试工具：
 
 适用于【无法】补间计算的动画（有得补间当然选择补间，省事，省空间）
 
-这里的重点是，我我们需要停掉关键帧动画animation中间的补间，使用：
+这里的重点是，我们需要停掉关键帧动画animation中间的补间，使用：
 
 	animation-timing-function: steps(1);
 

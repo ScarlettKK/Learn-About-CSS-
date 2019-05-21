@@ -73,3 +73,41 @@ transition调试工具：
 	animation-timing-function: steps(1);
 
 适用范围：动画面积不大，时长也不大，不然性能消耗会很大
+
+## 面试真题
+
+大多考察语法，所以一定要熟知transition、keyframe怎么写
+
+1. CSS动画的实现方式有几种
+
+	transition
+
+	keyframes（animation）
+
+2. 过渡动画和关键帧动画的区别
+
+	过渡动画需要有状态变化
+
+	关键帧动画不需要状态变化
+
+	关键帧动画能控制的更为精细（正播反播，停留状态等等）
+
+3. 如何实现逐帧动画
+
+	使用关键帧动画的语法（keyframes）
+
+	去掉补间（animation-timing-function: steps(1);）
+
+4. CSS动画的性能
+
+	性能不坏
+
+	部分情况下优于JS
+
+	但JS可以做到更好（JS支持优化）
+
+	部分高危属性，无论谁来做性能都不好（box-shadow等，需要慎重使用）
+
+
+
+

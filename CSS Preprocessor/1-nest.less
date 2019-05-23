@@ -1,0 +1,21 @@
+/* less样式文件，安装less编译文件：npm install less -g */
+body{
+    padding:0;
+    margin:0;
+}
+
+/* less语法的嵌套部分！特色！让代码变得更容易组织*/
+.wrapper{
+    background:white;
+
+    .nav{
+        font-size: 12px;
+    }
+    .content{
+        font-size: 14px;
+        /* & 是一个平级的关系（见编译出来的文件）*/
+        &:hover{
+            background:red;
+        }
+    }
+}

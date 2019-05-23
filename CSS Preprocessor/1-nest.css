@@ -1,0 +1,18 @@
+/* less样式文件经过编译产生的css文件 */
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  background: white;
+}
+.wrapper .nav {
+  font-size: 12px;
+}
+.wrapper .content {
+  font-size: 14px;
+}
+/*平级关系*/
+.wrapper .content:hover {
+  background: red;
+}

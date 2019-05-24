@@ -1,0 +1,20 @@
+/* sass文件，同样需要使用npm安装编译工具，与less语法基本上完全一致 */
+body{
+    padding:0;
+    margin:0;
+}
+
+/*嵌套格式结构*/
+.wrapper{
+    background:white;
+
+    .nav{
+        font-size: 12px;
+    }
+    .content{
+        font-size: 14px;
+        &:hover{
+            background:red;
+        }
+    }
+}

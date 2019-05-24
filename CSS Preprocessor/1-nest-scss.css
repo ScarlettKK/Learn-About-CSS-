@@ -1,0 +1,22 @@
+/* sass文件编译出来的css代码 */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*结构扁平化*/
+.wrapper {
+  background: white;
+}
+
+.wrapper .nav {
+  font-size: 12px;
+}
+
+.wrapper .content {
+  font-size: 14px;
+}
+
+.wrapper .content:hover {
+  background: red;
+}

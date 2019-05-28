@@ -1,0 +1,24 @@
+/*less、sass语法先进的一个地方在于，我们可以在里面添加变量*/
+/*这样当改动的时候，只要改掉赋值的一个地方，就可以全部一起改了*/
+@fontSize: 12px; /*注意这里的size需要带单位*/
+@bgColor: red;
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    /*less的颜色函数，lighten为变浅*/
+    background:lighten(@bgColor, 40%);
+
+    .nav{
+        font-size: @fontSize;
+    }
+    .content{
+        font-size: @fontSize + 2px; /*大小的运算*/
+        &:hover{
+            background:@bgColor;
+        }
+    }
+}

@@ -28,4 +28,8 @@ import CSS文件模块化（CSS原有的import性能差，这里类似JS的impor
 
 `less参考代码`：[1-nest.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/1-nest.less)
 
-less编译结果参考代码`：[1-nest.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/1-nest.css)
+`less编译结果参考代码`：[1-nest.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/1-nest.css)
+
+`sass参考代码`：[1-nest.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/1-nest.scss)
+
+`sass编译结果参考代码`：[1-nest-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/1-nest-scss.css)

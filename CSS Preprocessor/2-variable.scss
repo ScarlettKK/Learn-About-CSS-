@@ -1,0 +1,24 @@
+/*sass的写法，与less的区别是：sass变量用的是$，less用的是@*/
+/*原因是less的语法想要接近css原本的语法，所以会采用@，让人能更快接受*/
+/*而sass的想法是突出与css语法的不同，所以采用$，避免产生混淆*/
+$fontSize: 12px;
+$bgColor: red;
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten($bgColor, 40%);
+
+    .nav{
+        font-size: $fontSize;
+    }
+    .content{
+        font-size: $fontSize + 2px;
+        &:hover{
+            background:red;
+        }
+    }
+}

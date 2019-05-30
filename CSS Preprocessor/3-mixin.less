@@ -1,0 +1,51 @@
+
+@fontSize: 12px;
+@bgColor: red;
+
+.box{
+    color:green;
+}
+
+/*之前没有mixin的时候，在css中如何复用样式？*/
+/*把复用的样式抽取出来单独成类，然后在html里面多处引用即可实现，但不是在css层面的复用*/
+/*mixin就是为了这种场景而生的，为我们提供了一种css层面的复用*/
+.box1{
+    .box();
+    line-height: 2em;
+}
+.box2{
+    .box();
+    line-height: 3em;
+}
+
+/* mixin示例写法，类似js函数 */
+.block(@fontSize){
+    font-size: @fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* mixin示例写法 */
+
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten(@bgColor, 40%);
+
+    .nav{
+        /* mixin调用写法 */
+        .block(@fontSize);
+        /* mixin调用写法 */
+    }
+    .content{
+        /* mixin调用写法 */
+        .block(@fontSize + 2px);
+        /* mixin调用写法 */
+        &:hover{
+            background:red;
+        }
+    }
+}

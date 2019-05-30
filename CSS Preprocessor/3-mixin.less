@@ -1,14 +1,16 @@
-
-@fontSize: 12px;
-@bgColor: red;
-
-.box{
-    color:green;
-}
-
 /*之前没有mixin的时候，在css中如何复用样式？*/
 /*把复用的样式抽取出来单独成类，然后在html里面多处引用即可实现，但不是在css层面的复用*/
 /*mixin就是为了这种场景而生的，为我们提供了一种css层面的复用*/
+@fontSize: 12px;
+@bgColor: red;
+
+/* mixin示例写法2，类似普通css写法，但会被编译出来 */
+/* 写成.box()的话就不会被编译出来（css编译结果中没有），要注意这点区别 */
+.box{
+    color:green;
+}
+/* mixin示例写法2 */
+
 .box1{
     .box();
     line-height: 2em;

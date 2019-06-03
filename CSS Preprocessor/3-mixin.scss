@@ -1,0 +1,33 @@
+/*sass中的mixin，概念上基本上跟less完全一样*/
+
+/*这里变量前面的符号不一样，less是@，sass是$*/
+$fontSize: 12px;
+$bgColor: red;
+
+/*sass的mixin前面必须有@mixin符号*/
+/*less前面不必有这个，但名称前面会有"."*/
+@mixin block($fontSize){
+    font-size: $fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten($bgColor, 40%);
+
+    .nav{
+        /*sass调用mixin前面必须有@include，这点是区别*/
+        @include block($fontSize);
+    }
+    .content{
+        @include block($fontSize + 2px);
+        &:hover{
+            background:red;
+        }
+    }
+}

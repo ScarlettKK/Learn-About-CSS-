@@ -47,3 +47,11 @@ import CSS文件模块化（CSS原有的import性能差，这里类似JS的impor
 ## mixin
 
 应用：一些通用样式（如清除浮动），只需要编写一次，后面直接引用即可。也方便我们按单元构造样式。
+
+`less参考代码`：[3-mixin.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin.less)
+
+`less编译结果参考代码`：[3-mixin.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin.css)
+
+`sass参考代码`：[3-mixin.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin.scss)
+
+`sass编译结果参考代码`：[3-mixin-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin-scss.css)

@@ -43,3 +43,7 @@ import CSS文件模块化（CSS原有的import性能差，这里类似JS的impor
 `sass参考代码`：[2-variable.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/2-variable.scss)
 
 `sass编译结果参考代码`：[2-variable-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/2-variable-scss.css)
+
+## mixin
+
+应用：一些通用样式（如清除浮动），只需要编写一次，后面直接引用即可。也方便我们按单元构造样式。

@@ -1,0 +1,33 @@
+// 为何要使用extend？
+// 只用mixin的话，编译出来的代码会带有大规模的重复，mixin只是简单粗暴的重复
+// 一般在CSS中为了避免这种重复，我们会把相同的部分抽取出来一起集中定义
+// 在预处理语言中，我们就会用extend来解决这个问题，减少重复代码
+// extend：扩展某一个选择器，但不能带参数（不够灵活）
+@fontSize: 12px;
+@bgColor: red;
+
+.block{
+    font-size: @fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten(@bgColor, 40%);
+    // extend语法
+    .nav:extend(.block){
+        color: #333;
+    }
+    .content{
+        // 这里&的写法等价于上面的.nav:extend(.block)
+        &:extend(.block);
+        &:hover{
+            background:red;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+// sass：extend的写法略有不同，但逻辑都是一样的
+// extend、mixin的思想都是集中维护css代码，而不是需要跑到html中维护，提升代码质量和可维护性
+$fontSize: 12px;
+$bgColor: red;
+
+.block{
+    font-size: $fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten($bgColor, 40%);
+
+    .nav{
+        @extend .block;
+        color: #333;
+    }
+    .content{
+        @extend .block;
+        &:hover{
+            background:red;
+        }
+    }
+}

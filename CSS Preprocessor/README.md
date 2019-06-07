@@ -55,3 +55,21 @@ import CSS文件模块化（CSS原有的import性能差，这里类似JS的impor
 `sass参考代码`：[3-mixin.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin.scss)
 
 `sass编译结果参考代码`：[3-mixin-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin-scss.css)
+
+## extend
+
+只用mixin的话，编译出来的代码会带有大规模的重复，mixin只是简单粗暴的重复
+
+一般在CSS中为了避免这种重复，我们会把相同的部分抽取出来一起集中定义
+
+在预处理语言中，我们就会用extend来解决这个问题，减少重复代码
+
+extend：扩展某一个选择器，但不能带参数（不够灵活）
+
+`less参考代码`：[4-extend.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/4-extend.less)
+
+`less编译结果参考代码`：[4-extend.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/4-extend.css)
+
+`sass参考代码`：[4-extend.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/4-extend.scss)
+
+`sass编译结果参考代码`：[4-extend-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/4-extend-scss.css)

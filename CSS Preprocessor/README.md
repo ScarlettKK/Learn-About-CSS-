@@ -46,6 +46,12 @@ import CSS文件模块化（CSS原有的import性能差，这里类似JS的impor
 
 ## mixin
 
+之前没有mixin的时候，在css中如何复用样式？
+
+把复用的样式抽取出来单独成类，然后在html里面多处引用即可实现，但不是在css层面的复用
+
+mixin就是为了这种场景而生的，为我们提供了一种css层面的复用
+
 应用：一些通用样式（如清除浮动），只需要编写一次，后面直接引用即可。也方便我们按单元构造样式。
 
 `less参考代码`：[3-mixin.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/3-mixin.less)

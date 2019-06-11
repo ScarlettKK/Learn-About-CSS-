@@ -79,3 +79,24 @@ extend：扩展某一个选择器，但不能带参数（不够灵活）
 `sass参考代码`：[4-extend.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/4-extend.scss)
 
 `sass编译结果参考代码`：[4-extend-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/4-extend-scss.css)
+
+## loop
+
+应用：
+
+网格、
+
+复杂的动画效果，如动画延迟（每个元素延迟时间都不一样）、
+
+多元素但无法共用一个class的情况，且class之间有规律差异
+
+注意：sass是支持for循环的，不用用mixin的写法，而less暂不支持for循环
+
+`less参考代码`：[5-loop.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/5-loop.less)
+
+`less编译结果参考代码`：[5-loop.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/5-loop.css)
+
+`sass参考代码`：[5-loop.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/5-loop.scss)
+
+`sass编译结果参考代码`：[5-loop-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/5-loop-scss.css)
+

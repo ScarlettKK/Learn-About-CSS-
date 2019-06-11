@@ -1,0 +1,18 @@
+// sass的mixin写法，略有不同（变量用$、when改if）
+// @mixin gen-col($n){
+//     @if $n > 0 {
+//         @include gen-col($n - 1);
+//         .col-#{$n}{
+//             width: 1000px/12*$n;
+//         }
+//     }
+// }
+
+// @include gen-col(12);
+
+// 但实际上sass是支持for循环的，不用用mixin的写法！！！
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 1000px/12*$i;
+    }
+}

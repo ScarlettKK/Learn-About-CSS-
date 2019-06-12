@@ -100,3 +100,22 @@ extend：扩展某一个选择器，但不能带参数（不够灵活）
 
 `sass编译结果参考代码`：[5-loop-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/5-loop-scss.css)
 
+## import 
+
+less/sass的import与CSS原有的import是不同的
+
+less/sass的import 可以做到合并、复用代码，最终合并形成一个文件
+
+而CSS的import并不能做到这一点，只能一个一个去加载CSS文件
+
+一般我们会将less/sass变量单独抽取出来形成一个文件来管理
+
+这里需要按照一定的顺序，变量定义的部分需要第一个import，才能在其他模块之中使用该变量
+
+`less参考代码`：[6-import-main.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/6-import-main.less)
+
+`less编译结果参考代码`：[6-import-main.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/6-import-main.css)
+
+`sass参考代码`：[6-import-main.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/6-import-main.scss)
+
+`sass编译结果参考代码`：[6-import-main-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/6-import-main-scss.css)

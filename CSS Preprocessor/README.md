@@ -119,3 +119,8 @@ less/sass的import 可以做到合并、复用代码，最终合并形成一个�
 `sass参考代码`：[6-import-main.scss](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/6-import-main.scss)
 
 `sass编译结果参考代码`：[6-import-main-scss.css](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/6-import-main-scss.css)
+
+## 总结
+
+<img src="https://img2018.cnblogs.com/blog/1147701/201906/1147701-20190612200116264-1393930528.png">
+

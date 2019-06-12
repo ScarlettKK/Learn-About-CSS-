@@ -1,0 +1,7 @@
+// less import 可以做到合并、复用代码，最终形成一个文件
+// 而CSS的import并不能做到这一点，只能一个一个去加载
+// 这里需要按照一定的顺序，变量定义的部分需要第一个import，才能在其他模块之中使用该变量
+// 将变量定义的部分集中抽取出来的好处是，方便管理，只要一个地方改其他地方也会跟着改
+@import "./6-import-variable";
+@import "./6-import-module1";
+@import "./6-import-module2";

@@ -1,0 +1,20 @@
+/*less文件编译结果*/
+/*整体定义的变量不会被编译出来*/
+/*编译出来的模块一样式*/
+.module1 .box {
+  font-size: 16px;
+  color: blue;
+}
+.module1 .tips {
+  font-size: 14px;
+  color: #ccccff;
+}
+/*编译出来的模块二样式*/
+.module2 .box {
+  font-size: 18px;
+  color: blue;
+}
+.module2 .tips {
+  font-size: 16px;
+  color: #6666ff;
+}

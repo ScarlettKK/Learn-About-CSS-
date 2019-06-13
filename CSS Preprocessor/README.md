@@ -126,11 +126,13 @@ less/sass的import 可以做到合并、复用代码，最终合并形成一个�
 
 ## CSS预处理器框架
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201906/1147701-20190613194808350-600728307.png">
+
 提供了现成的mixin样式
 
 还有兼容性的一些处理
 
-
+参考代码(less的EST框架): [7-est.less](https://github.com/ScarlettKK/Learn-About-CSS-/blob/master/CSS%20Preprocessor/7-est.less)
 
 
 

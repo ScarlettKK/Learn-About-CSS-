@@ -19,3 +19,28 @@ Twitter出品
 ## Bootstrap提供了什么?
 
 基础样式、常用组件(按钮等)、JS插件(弹窗等)
+
+
+## Bootstrap JS组件
+
+用于组件交互(dropdown下拉、modal弹窗 等)
+
+所需要依赖的js文件:
+
+	基于jquery,必须引用jquery文件
+
+	还依赖一个第三方库Popper.js,用于处理弹出框(Bootstrap.bundle.js打包了Popper和Bootstrap)
+
+	最后需要引用Bootstrap.js文件
+
+使用方式:
+
+	基于html的data-*属性(data-toggle 切换状态、data-target 目标DOM对象、data-dismiss 取消切换对象...)
+
+	基于JS API,更灵活一些
+
+但其实Bootstrap提供的JS组件使用限制还是比较大,需要引入指定的JS,一般在大型项目中会有自己的设计,就不太适用
+
+
+
+

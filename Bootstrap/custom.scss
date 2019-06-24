@@ -1,0 +1,4 @@
+$primary: green;
+// 引用SCSS源文件,修改变量
+@import './bootstrap-custom/scss/bootstrap';
+// 需要哪个mixin就@import哪个,针对性修改

@@ -43,6 +43,8 @@ Twitter出品
 
 ## Bootstrap 响应式布局
 
+<img src="https://img2018.cnblogs.com/blog/1147701/201906/1147701-20190620171113215-1889767670.png">
+
 Bootstrap 的 网格系统 可以在 不同的分辨率下 有不同的分配
 
 具体显示情况需要自己设计

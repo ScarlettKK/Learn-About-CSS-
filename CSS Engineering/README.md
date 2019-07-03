@@ -20,7 +20,7 @@ CSS -> PostCSS解析转换(模块化/加前缀/兼容性/...) -> CSS
 
 	cssnano 压缩代码
 
-	cssnext 使用CSS新特性
+	cssnext 使用CSS新特性(CSS已经定稿的,但浏览器并不支持的特性,类似ES6)
 
 	precss 变量、mixin、循环等
 

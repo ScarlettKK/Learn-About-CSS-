@@ -29,6 +29,20 @@ position:absolute 越独立越强大, 可以摆脱overflow的限制, 实现一�
 
 不影响其他布局的绝对定位下的相对定位之王(使用绝对定位, 实现相对定位的效果)
 
+`功能特性`:
+
+图片图标来覆盖, 无依赖(父元素不额外添加position:relative属性), 真不赖(如下图红色圈圈)
+
+其实要做到自由的图标,并不需要给其父元素设置position:relative,设置了反而降低了自适应性
+
+最好的做法是, 父元素不变, 图标设置position:absolute, 但通过margin来调整其位置, 不通过left right等属性. 好处如下:
+
+	父元素不需要额外添加position:relative属性,更加干净(且父元素这个属性可能后续会被去掉,或者产生其他影响)
+	自适应性更加强, 会根据其他兄弟元素的大小自动调整位置, 而不是写死的定位
+
+
+<img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g8veavylxoj30e40f6jx8.jpg">
+
 
 
 
